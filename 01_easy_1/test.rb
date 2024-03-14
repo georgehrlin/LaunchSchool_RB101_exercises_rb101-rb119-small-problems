@@ -1,10 +1,7 @@
-def is_odd?(input)
-  input.abs.remainder(2) == 1
+def calculate_bonus(salary, bonus_status)
+  bonus_status ? (salary / 2) : 0
 end
 
-puts is_odd?(2)    # => false
-puts is_odd?(5)    # => true
-puts is_odd?(-17)  # => true
-puts is_odd?(-8)   # => false
-puts is_odd?(0)    # => false
-puts is_odd?(7)    # => true
+puts calculate_bonus(2800, true) == 1400
+puts calculate_bonus(1000, false) == 0
+puts calculate_bonus(50000, true) == 25000
