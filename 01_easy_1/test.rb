@@ -1,7 +1,11 @@
-def calculate_bonus(salary, bonus_status)
-  bonus_status ? (salary / 2) : 0
+def centre_of(input)
+  length = input.length
+  mid_index = length / 2
+  length.odd? ? input[mid_index] : "#{input[mid_index - 1]}#{input[mid_index]}"
 end
 
-puts calculate_bonus(2800, true) == 1400
-puts calculate_bonus(1000, false) == 0
-puts calculate_bonus(50000, true) == 25000
+p centre_of('I love ruby')   #=> 'e'
+p centre_of('Launch School') #=> ' '
+p centre_of('Launch')        #=> 'un'
+p centre_of('Launchschool')  #=> 'hs'
+p centre_of('x')             #=> 'x'

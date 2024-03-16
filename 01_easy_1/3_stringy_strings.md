@@ -92,7 +92,7 @@ def stringy(size, start_with = 1)
   numbers.join
 end
 ```
-# Cool Answer
+# Cool Answer by Schoolmate
 ```ruby
 # By Juliette Sinibardy
 def stringy(int)
