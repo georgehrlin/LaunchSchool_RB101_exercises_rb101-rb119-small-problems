@@ -1,9 +1,10 @@
-num1, num2 = %w[first second].map do |position|
-  puts "==> Enter the #{position} number:"
-gets.to_i
-end
+a = ['apple', 'orange']
+b = a * 2
 
-%w[+ - * / % **].each do |operator|
-  equation = "#{num1} #{operator} #{num2}"
-  puts "==> #{equation} = #{eval(equation)}"
-end
+p a # Output: ["apple", "orange"]
+p b # Output: ["apple", "orange", "apple", "orange"]
+
+b[1].upcase!
+
+p a # Output: ["apple", "ORANGE"]
+p b # Output: ["apple", "ORANGE", "apple", "ORANGE"]
