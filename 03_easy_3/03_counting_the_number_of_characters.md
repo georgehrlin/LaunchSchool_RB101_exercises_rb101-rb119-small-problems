@@ -65,19 +65,19 @@ puts "There are #{counter} characters in \"#{input}\"."
 # Cool Solutions by Others
 ```ruby
 # By Rafael Dwan
-# modified & condensed
+# Modified & condensed
 input = gets.chomp
 number_of_characters = input.split.join.length
 ```
 ```ruby
 # By David Newton
-# modified & condensed
+# Modified & condensed
 input = gets.chomp
 number_of_characters = input.length - input.count(' ')
 ```
 ```ruby
 # By Mark Travis Linville
-# modified & condensed
+# Modified & condensed
 input = gets.chomp
 number_of_characters = input.gsub(' ', '').length
 ```

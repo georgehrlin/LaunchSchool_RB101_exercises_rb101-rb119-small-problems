@@ -1,10 +1,8 @@
-a = ['apple', 'orange']
-b = a * 2
+def xor?(value1, value2)
+  (value1 && !value2) || (value2 && !value1)
+end
 
-p a # Output: ["apple", "orange"]
-p b # Output: ["apple", "orange", "apple", "orange"]
-
-b[1].upcase!
-
-p a # Output: ["apple", "ORANGE"]
-p b # Output: ["apple", "ORANGE", "apple", "ORANGE"]
+p xor?(5.even?, 4.even?) #=> true
+p xor?(5.odd?, 4.odd?)   #=> true
+p xor?(5.odd?, 4.even?)  #=> false
+p xor?(5.even?, 4.odd?)  #=> false
